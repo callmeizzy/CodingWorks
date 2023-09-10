@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10강 - 표(table) 만들기</title>
+    <style>
+      body {
+        font-style: pretendard;
+        font-size: 14px;
+      }
+      span {
+        color: #c4aeff;
+        background-color: #fdf3ff;
+      }
+
+      table {
+        width: 800px;
+        border-collapse: collapse;
+      }
+      table td,
+      table th {
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #d3d3d3;
+      }
+      table th {
+        background-color: #c4aeff;
+        color: #fff;
+      }
+      table caption {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+  <!-- 개념 -->
+  <table>
+    <tr>
+      <td>first cell</td>
+      <td>second cell</td>
+    </tr>
+    <tr>
+      <td>third cell</td>
+      <td>fourth cell</td>
+    </tr>
+  </table>
+  <hr>
+  <!-- 예제 -->
+  <h3><span>무제한 구독형 플랜 소개</span></h3>
+  <table border="1">
+    <caption>부가세가 포함된 금액입니다.</caption>
+    <tr>
+      <th>상품명</th>
+      <th>월정액</th>
+      <th>제공혜택</th>
+    </tr>
+
+    <tr>
+      <td>지상파 무제한 즐기기</td>
+      <td>14,300원</td>
+      <td>우리가족 취향 저격, 국민 월정액!</td>
+    </tr>
+
+    <tr>
+      <td>cj enm 무제한 즐기기</td>
+      <td>14,300원</td>
+      <td>세상의 모든 즐거움!</td>
+    </tr>
+
+    <tr>
+      <td>jtbc 무제한 즐기기</td>
+      <td>7,700원</td>
+      <td>부담없는 가격으로 JTBC의 프로그램을 무제한으로 만나보세요!</td>
+    </tr>   
+  </table>
+  <br><br>
+  <!-- 표 만들기(셀 합치기 rowspan / colspan) -->
+  <h3><span>표 만들기</span></h3>
+  <table border="1" width="100">
+    <tr>
+      <th colspan="4">Temperature</th>
+    </tr>
+    <tr>
+      <td>Month</td>
+      <td>High</td>
+      <td>Low</td>
+      <td>Average</td>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>48</td>
+      <td>36</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>49</td>
+      <td>37</td>
+      <td rowspan="2">43</td>
+    </tr>
+    <tr>
+      <td>March</td>
+      <td>52</td>
+      <td>39</td>
+
+    </tr>
+    <tr>
+      <td>April</td>
+      <td>58</td>
+      <td>43</td>
+      <td>47</td>
+    </tr>
+  </table>
+</body>
+</html>

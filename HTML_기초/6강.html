@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6강 - 하이퍼링크와 앵커만들기</title>
+  <style>
+    body {
+      font-family: Pretendard;
+      font-size: 14px;
+      background-color: #f4d4fc;
+    }
+    nav {     
+      text-align: center;
+      margin: 100px;
+    }
+    nav a {
+      background-color: #6446b0;
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+    figure hr {
+      height: 2pxx;
+      border: none;
+      border-top: 1px dashed #ccc;
+    }
+    .gototop{
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #ffcdea;
+      border-radius: 10px;
+      
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <h1>하이퍼링크, 앵커만들기</h1> -->
+  <!-- target="_blank" > 새 탭에서 띄우기-->
+  <!-- <a href="http://www.instagram.com" target="_blank" title="누르면 인스타그램 웹사이트로 이동"><img src="./source/instagram.svg"></a> -->
+
+  <!-- 텍스트 내 앵커만들기 -->
+  <nav>
+    <a href="#slide1">카페</a>
+    <a href="#slide2">블로그</a>
+    <a href="#slide3">쇼핑</a>
+    <a href="#slide4">뉴스</a>
+    <a href="#slide5">증권</a>
+    <a href="#slide6">부동산</a>
+  </nav>
+  <figure>
+     <h1 id="slide1">카페</h1>
+     <hr>
+     <img src="./source/카페.jpeg" alt="">
+  </figure>
+  <figure>
+    <h1 id="silde2">블로그</h1>
+    <hr>
+    <img src="./source/블로그.png" alt="">
+  </figure>
+  <figure>
+    <h1 id="slide3">쇼핑</h1>
+    <hr>
+    <img src="./source/쇼핑.jpeg" alt="">
+  </figure>
+  <figure>
+    <h1 id="slide4">뉴스</h1>
+    <hr>
+    <img src="./source/뉴스.jpeg" alt="">
+  </figure>
+  <figure>
+    <h1 id="slide5">증권</h1>
+    <hr>
+    <img src="./source/증권.jpeg" alt="">
+  </figure>
+  <figure>
+    <h1 id="slide6">부동산</h1>
+    <hr>
+    <img src="./source/부동산.jpeg" alt="">
+  </figure>
+  <div class="gototop">
+    <a href="#top">올라가기</a>
+  </div>
+</body>
+</html>

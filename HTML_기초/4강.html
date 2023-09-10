@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4강 - 목록만들기</title>
+</head>
+<body>
+    <!-- 순서가 없는 목록 ul -->
+  <ul>
+    <li>마라탕</li>
+    <li>핫도그</li>
+    <li>맥모닝</li>
+    <li>떡볶이</li>
+    <li>탕후루</li>
+  </ul>
+
+  <!-- 꼭지 바꾸기 -->
+  <ul type="square">
+    <li>마라탕</li>
+    <li>핫도그</li>
+    <li>맥모닝</li>
+    <li>떡볶이</li>
+    <li>탕후루</li>
+  </ul>
+
+  <!-- 순서가 있는 목록 ol -->
+  <ol type="1">
+    <li>마라탕</li>
+    <li>핫도그</li>
+    <li>맥모닝</li>
+    <li>떡볶이</li>
+    <li>탕후루</li>
+  </ol>
+
+  <!-- ul / li 중첩_1 -->
+  <ul>
+    <li>간식
+        <ul>
+            <li>맥모닝</li>
+        </ul>
+    </li>  
+  </ul>
+
+  <!-- ol / li  / ul 중첩_2 -->
+  <ol>
+    <li>핫도그</li>
+    <li>중국음식
+      <ul>
+        <li>마라탕</li>
+        <li>탕후루</li>
+      </ul>
+      <li>한국음식</li>
+        <ul>
+          <li>떡볶이</li>
+        </ul>
+    </li>
+  </ol>
+
+  <!-- dl / dt / dd 순서정의 -->
+    <dl>
+      <dt>한국음식</dt>
+      <dd>떡볶이는 한국의 고유 음식이다</dd>
+    </dl>
+</body>
+</html>

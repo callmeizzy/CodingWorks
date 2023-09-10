@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9강 - 멀티미디어 다루기</title>
+  <style>
+    /* 저장된 video 삽입 후 풀 스크린으로 출력 */
+    /* body {
+      margin: 0;
+    }
+    video {
+      position: fixed;
+      min-width: 100%;
+      min-height: 100%;
+    } */
+  </style>
+</head>
+<body>
+  <!-- 저장된 audio 삽입, controls 없으면 백그라운드 뮤직으로 기능함 -->
+  <div class="audio-wrap"><audio src="./멀티미디어/imgae-multimedia/media/birds_singing-6888.mp3" controls autoplay muted></audio></div>
+
+  <!-- 저장된 video 삽입 -->
+  <div class="video-wrap"><video src="./멀티미디어/imgae-multimedia/media/halongbay_320.mp4" controls autoplay muted></video></div>
+
+  <!-- 저장된 video 삽입 후 표지 지정하기 -->
+  <div class="video-wrap"><video src="./멀티미디어/imgae-multimedia/media/halongbay_320.mp4" controls muted poster="./source/뉴스.jpeg"></video></div>
+
+  <!-- 유튜브에서 video 끌어오기-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/v5XamsRrwj4?si=uoNsY1sElDBITMBf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

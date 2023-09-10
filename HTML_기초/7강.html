@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7강 - 이미지맵 만들기</title>
+</head>
+<body>
+  <!-- <img src="이미지파일 경로" usemap="#특정이름"><map name="특정이름">
+  <area shape="rect" coords = "왼쪽상단 x,y좌표값, 오른쪽 하단 x,y좌표값", href="#",title="쿠폰다운로드"></map> -->
+  <img src="./source/blackfriday.png" usemap="#download">
+  <map name="download">
+    <area shape="rect" coords="205,630,370,680" href="https://www.naver.com" title="쿠폰다운로드">
+  </map>
+  
+  <!-- <img src="이미지파일 경로" usemap="#특정이름"><map name="특정이름">
+  <area shape="circle" coords = "원의 중앙 x,y좌표값, 원의 반지름", href="#",title="커서에 띄울 박스 이름"></map> -->
+  <img src="./source/5icons.png" usemap="#browser-list">
+  <map name="browser-list">
+    <area shape="circle" coords="55,60,50" href="https://www.naver.com" title="크롬 브라우저 다운로드">
+    <area shape="circle" coords="178,60,50" href="" title="파이어폭스 브라우저 다운로드">
+    <area shape="circle" coords="310,60,50" href="" title="사파리 브라우저 다운로드">
+    <area shape="circle" coords="430,60,50" href="" title="엣지 브라우저 다운로드">
+    <area shape="circle" coords="550,60,50" href="" title="오메가 브라우저 다운로드">
+  </map>
+</body>
+</html>
