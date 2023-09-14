@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3강 - text 서식</title>
+  <!-- 구글 웹폰트 사용하기 -->
+  <link rel="stylesheet" href=https://fonts.googleapis.com/earlyaccess/nanumgothic.css>
+  <style>
+    body {
+      font-size: 14px; /*일반적인 웹 페이지의 폰트 사이즈*/
+      font-weight: bold;
+      line-height: 30px; /*줄 간격을 지정하는 특성*/
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    h1{
+      color: #ff6f6f;
+      font-weight: normal;
+      font-variant: small-caps;
+      /* 소문자를 아주 작은 대문자로 표현하는 방법 */
+      text-decoration: underline;
+      text-align: center;
+    }
+    h2 {
+      color: rgb(247, 164, 62);
+      text-transform: capitalize;
+      letter-spacing: 1px; 
+      /* 글자 간 간격 조정 */
+      word-spacing: 10px;
+      /* 단어와 단어 간격 조정 */
+    }
+    h3 {
+      font-size: 100px;
+      color: #17be12;
+      text-shadow: 5px 5px 30px #db7900;
+                /* x축  y축  퍼짐정도  컬러 */
+    }
+    a {
+      text-decoration: none;
+    }
+    a.direct-site:link {
+      color:#de7afc
+    }
+    a.direct-site:visited {
+      color: #628bc1;
+    }
+    a.direct-site:hover {
+      color: #087500;
+      text-decoration: underline;
+    }
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Lorem ipsum dolor sit.
+  </h1>
+  <h2>
+    Lorem ipsum dolor sit amet consectetur.
+  </h2>
+  <h3>Lorem.</h3>
+  <a href="https://www.naver.com" class="direct-site" target="_blank">네이버 바로가기 (클릭!)</a>
+  <a href="https://www.daum.net" class="direct-site" target="_blank">다음 바로가기 (클릭!)</a>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quidem maxime quibusdam reprehenderit illum error labore dolorum quasi et iste atque eligendi aliquam, voluptate harum repudiandae animi reiciendis illo culpa.
+  </p>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores aliquid quod amet sit nisi architecto earum facere voluptatum doloremque expedita dolorum nostrum quos, ea eos mollitia nulla eum perferendis consequatur!
+  </p>
+</body>
+</html>
